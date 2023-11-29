@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+class BaseViewModel {
+    func viewDidLoad() {
+    }
+}

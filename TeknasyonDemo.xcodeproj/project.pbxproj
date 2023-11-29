@@ -29,6 +29,14 @@
 		BC7DFEE52B171B3200267B43 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = BC7DFEE42B171B3200267B43 /* RxCocoa */; };
 		BC7DFEE72B171B3200267B43 /* RxCocoa-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = BC7DFEE62B171B3200267B43 /* RxCocoa-Dynamic */; };
 		BC7DFEE92B171B3200267B43 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = BC7DFEE82B171B3200267B43 /* RxRelay */; };
+		BC7DFEEC2B171CB000267B43 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7DFEEB2B171CB000267B43 /* APIRouter.swift */; };
+		BC7DFEEF2B171CC500267B43 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7DFEEE2B171CC500267B43 /* APIClient.swift */; };
+		BC7DFEF12B171CDC00267B43 /* ApplicationServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7DFEF02B171CDC00267B43 /* ApplicationServer.swift */; };
+		BC7DFEF32B171CEB00267B43 /* APIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7DFEF22B171CEB00267B43 /* APIConfiguration.swift */; };
+		BC7DFEF62B171E7700267B43 /* PopularResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7DFEF52B171E7700267B43 /* PopularResponse.swift */; };
+		BC7DFEF82B17200200267B43 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7DFEF72B17200200267B43 /* StringExtension.swift */; };
+		BC7DFEFB2B17240700267B43 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7DFEFA2B17240700267B43 /* Constants.swift */; };
+		BC7DFEFE2B17313800267B43 /* DateUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7DFEFD2B17313800267B43 /* DateUtil.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +56,14 @@
 		BC7DFECE2B17191600267B43 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		BC7DFED22B17193800267B43 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
 		BC7DFED52B17195100267B43 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		BC7DFEEB2B171CB000267B43 /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
+		BC7DFEEE2B171CC500267B43 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		BC7DFEF02B171CDC00267B43 /* ApplicationServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationServer.swift; sourceTree = "<group>"; };
+		BC7DFEF22B171CEB00267B43 /* APIConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfiguration.swift; sourceTree = "<group>"; };
+		BC7DFEF52B171E7700267B43 /* PopularResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularResponse.swift; sourceTree = "<group>"; };
+		BC7DFEF72B17200200267B43 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		BC7DFEFA2B17240700267B43 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		BC7DFEFD2B17313800267B43 /* DateUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtil.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +104,10 @@
 		BC7DFEA32B17184300267B43 /* TeknasyonDemo */ = {
 			isa = PBXGroup;
 			children = (
+				BC7DFEFC2B17312B00267B43 /* Utils */,
+				BC7DFEF92B1723F900267B43 /* Constants */,
+				BC7DFEEA2B171BE200267B43 /* Api */,
+				BC7DFEF42B171E6700267B43 /* Model */,
 				BC7DFED42B17194000267B43 /* Extensions */,
 				BC7DFED02B17191F00267B43 /* Cell */,
 				BC7DFEB82B17187E00267B43 /* Screens */,
@@ -159,8 +179,44 @@
 			isa = PBXGroup;
 			children = (
 				BC7DFED52B17195100267B43 /* UIColorExtension.swift */,
+				BC7DFEF72B17200200267B43 /* StringExtension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BC7DFEEA2B171BE200267B43 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				BC7DFEEB2B171CB000267B43 /* APIRouter.swift */,
+				BC7DFEEE2B171CC500267B43 /* APIClient.swift */,
+				BC7DFEF02B171CDC00267B43 /* ApplicationServer.swift */,
+				BC7DFEF22B171CEB00267B43 /* APIConfiguration.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		BC7DFEF42B171E6700267B43 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BC7DFEF52B171E7700267B43 /* PopularResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BC7DFEF92B1723F900267B43 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				BC7DFEFA2B17240700267B43 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		BC7DFEFC2B17312B00267B43 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				BC7DFEFD2B17313800267B43 /* DateUtil.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,13 +305,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC7DFED32B17193800267B43 /* MainTableViewCell.swift in Sources */,
+				BC7DFEFE2B17313800267B43 /* DateUtil.swift in Sources */,
+				BC7DFEFB2B17240700267B43 /* Constants.swift in Sources */,
+				BC7DFEEF2B171CC500267B43 /* APIClient.swift in Sources */,
 				BC7DFEA52B17184300267B43 /* AppDelegate.swift in Sources */,
+				BC7DFEF32B171CEB00267B43 /* APIConfiguration.swift in Sources */,
+				BC7DFEF12B171CDC00267B43 /* ApplicationServer.swift in Sources */,
+				BC7DFEF82B17200200267B43 /* StringExtension.swift in Sources */,
 				BC7DFECF2B17191600267B43 /* BaseViewModel.swift in Sources */,
 				BC7DFEC62B1718E600267B43 /* DetailView.swift in Sources */,
+				BC7DFEF62B171E7700267B43 /* PopularResponse.swift in Sources */,
 				BC7DFEC82B1718F400267B43 /* DetailViewModel.swift in Sources */,
 				BC7DFEC02B1718C600267B43 /* MainView.swift in Sources */,
 				BC7DFEC42B1718DC00267B43 /* DetailViewController.swift in Sources */,
 				BC7DFECB2B17190400267B43 /* BaseViewController.swift in Sources */,
+				BC7DFEEC2B171CB000267B43 /* APIRouter.swift in Sources */,
 				BC7DFECD2B17190B00267B43 /* BaseView.swift in Sources */,
 				BC7DFEBD2B1718AD00267B43 /* MainViewController.swift in Sources */,
 				BC7DFEC22B1718D100267B43 /* MainViewModel.swift in Sources */,
@@ -408,7 +472,6 @@
 				INFOPLIST_FILE = TeknasyonDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -436,7 +499,6 @@
 				INFOPLIST_FILE = TeknasyonDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

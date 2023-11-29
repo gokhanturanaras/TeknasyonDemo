@@ -37,6 +37,7 @@
 		BC7DFEF82B17200200267B43 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7DFEF72B17200200267B43 /* StringExtension.swift */; };
 		BC7DFEFB2B17240700267B43 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7DFEFA2B17240700267B43 /* Constants.swift */; };
 		BC7DFEFE2B17313800267B43 /* DateUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7DFEFD2B17313800267B43 /* DateUtil.swift */; };
+		BC7DFF002B17667E00267B43 /* Spacer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7DFEFF2B17667E00267B43 /* Spacer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,7 @@
 		BC7DFEF72B17200200267B43 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		BC7DFEFA2B17240700267B43 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		BC7DFEFD2B17313800267B43 /* DateUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtil.swift; sourceTree = "<group>"; };
+		BC7DFEFF2B17667E00267B43 /* Spacer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spacer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,6 +217,7 @@
 			isa = PBXGroup;
 			children = (
 				BC7DFEFD2B17313800267B43 /* DateUtil.swift */,
+				BC7DFEFF2B17667E00267B43 /* Spacer.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -320,6 +323,7 @@
 				BC7DFEC42B1718DC00267B43 /* DetailViewController.swift in Sources */,
 				BC7DFECB2B17190400267B43 /* BaseViewController.swift in Sources */,
 				BC7DFEEC2B171CB000267B43 /* APIRouter.swift in Sources */,
+				BC7DFF002B17667E00267B43 /* Spacer.swift in Sources */,
 				BC7DFECD2B17190B00267B43 /* BaseView.swift in Sources */,
 				BC7DFEBD2B1718AD00267B43 /* MainViewController.swift in Sources */,
 				BC7DFEC22B1718D100267B43 /* MainViewModel.swift in Sources */,

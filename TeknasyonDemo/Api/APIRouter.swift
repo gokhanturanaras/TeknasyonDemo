@@ -7,6 +7,7 @@
 
 import Foundation
 import Alamofire
+import RxSwift
 
 enum APIRouter: APIConfiguration{
     case popular(language:String ,page:Int)

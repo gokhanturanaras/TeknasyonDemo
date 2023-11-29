@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+class DetailViewModel: BaseViewModel {
+    var popularData: Popular?
+}

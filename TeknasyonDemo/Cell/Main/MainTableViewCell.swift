@@ -10,7 +10,7 @@ import SDWebImage
 
 class MainTableViewCell: UITableViewCell {
     
-    private let productTitle: UILabel = {
+    private let popularTitle: UILabel = {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 24, weight: .bold)
         label.textColor = .white
@@ -18,7 +18,7 @@ class MainTableViewCell: UITableViewCell {
         return label
     }()
     
-    private let productDesc: UILabel = {
+    private let popularDesc: UILabel = {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 16, weight: .regular)
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -65,8 +65,8 @@ class MainTableViewCell: UITableViewCell {
         if let imagePath = data.backdropPath {
             contentImage.sd_setImage(with: URL(string: imagePath.getImagePath()))
         }
-        productTitle.text = data.name
-        productDesc.text = data.overview
+        popularTitle.text = data.name
+        popularDesc.text = data.overview
         raitingLabel.text = "\(data.voteAverage ?? 0)"
         dateLabel.text = data.firstAirDate?.getUIDate()
     }
@@ -89,8 +89,8 @@ extension MainTableViewCell {
     private func draw(){
         contentView.addSubview(contentImage)
         contentView.addSubview(stackView)
-        contentView.addSubview(productTitle)
-        contentView.addSubview(productDesc)
+        contentView.addSubview(popularTitle)
+        contentView.addSubview(popularDesc)
         stackView.addArrangedSubview(dateLabel)
         stackView.addArrangedSubview(raitingLabel)
     }
@@ -113,18 +113,18 @@ extension MainTableViewCell {
     }
     private func titleConstraint(){
         NSLayoutConstraint.activate([
-            productTitle.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16),
-            productTitle.topAnchor.constraint(equalTo: stackView.bottomAnchor, constant: 8),
-            productTitle.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -16)
+            popularTitle.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16),
+            popularTitle.topAnchor.constraint(equalTo: stackView.bottomAnchor, constant: 8),
+            popularTitle.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -16)
         ])
     }
     
     private func descConstraint(){
         NSLayoutConstraint.activate([
-            productDesc.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16),
-            productDesc.topAnchor.constraint(equalTo: productTitle.bottomAnchor, constant: 3),
-            productDesc.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -16),
-            productDesc.bottomAnchor.constraint(lessThanOrEqualTo: contentView.bottomAnchor, constant: -32)
+            popularDesc.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16),
+            popularDesc.topAnchor.constraint(equalTo: popularTitle.bottomAnchor, constant: 3),
+            popularDesc.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -16),
+            popularDesc.bottomAnchor.constraint(lessThanOrEqualTo: contentView.bottomAnchor, constant: -32)
         ])
     }
     private func stackViewConstraint(){

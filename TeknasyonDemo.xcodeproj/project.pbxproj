@@ -21,6 +21,14 @@
 		BC7DFECF2B17191600267B43 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7DFECE2B17191600267B43 /* BaseViewModel.swift */; };
 		BC7DFED32B17193800267B43 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7DFED22B17193800267B43 /* MainTableViewCell.swift */; };
 		BC7DFED62B17195100267B43 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7DFED52B17195100267B43 /* UIColorExtension.swift */; };
+		BC7DFED92B171AE000267B43 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = BC7DFED82B171AE000267B43 /* Alamofire */; };
+		BC7DFEDC2B171AEC00267B43 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = BC7DFEDB2B171AEC00267B43 /* SDWebImage */; };
+		BC7DFEDE2B171AEC00267B43 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = BC7DFEDD2B171AEC00267B43 /* SDWebImageMapKit */; };
+		BC7DFEE12B171B3200267B43 /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = BC7DFEE02B171B3200267B43 /* RxBlocking */; };
+		BC7DFEE32B171B3200267B43 /* RxBlocking-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = BC7DFEE22B171B3200267B43 /* RxBlocking-Dynamic */; };
+		BC7DFEE52B171B3200267B43 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = BC7DFEE42B171B3200267B43 /* RxCocoa */; };
+		BC7DFEE72B171B3200267B43 /* RxCocoa-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = BC7DFEE62B171B3200267B43 /* RxCocoa-Dynamic */; };
+		BC7DFEE92B171B3200267B43 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = BC7DFEE82B171B3200267B43 /* RxRelay */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +55,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC7DFEE52B171B3200267B43 /* RxCocoa in Frameworks */,
+				BC7DFEE72B171B3200267B43 /* RxCocoa-Dynamic in Frameworks */,
+				BC7DFEDC2B171AEC00267B43 /* SDWebImage in Frameworks */,
+				BC7DFEE12B171B3200267B43 /* RxBlocking in Frameworks */,
+				BC7DFEDE2B171AEC00267B43 /* SDWebImageMapKit in Frameworks */,
+				BC7DFED92B171AE000267B43 /* Alamofire in Frameworks */,
+				BC7DFEE92B171B3200267B43 /* RxRelay in Frameworks */,
+				BC7DFEE32B171B3200267B43 /* RxBlocking-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,6 +179,16 @@
 			dependencies = (
 			);
 			name = TeknasyonDemo;
+			packageProductDependencies = (
+				BC7DFED82B171AE000267B43 /* Alamofire */,
+				BC7DFEDB2B171AEC00267B43 /* SDWebImage */,
+				BC7DFEDD2B171AEC00267B43 /* SDWebImageMapKit */,
+				BC7DFEE02B171B3200267B43 /* RxBlocking */,
+				BC7DFEE22B171B3200267B43 /* RxBlocking-Dynamic */,
+				BC7DFEE42B171B3200267B43 /* RxCocoa */,
+				BC7DFEE62B171B3200267B43 /* RxCocoa-Dynamic */,
+				BC7DFEE82B171B3200267B43 /* RxRelay */,
+			);
 			productName = TeknasyonDemo;
 			productReference = BC7DFEA12B17184300267B43 /* TeknasyonDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -191,6 +217,11 @@
 				Base,
 			);
 			mainGroup = BC7DFE982B17184300267B43;
+			packageReferences = (
+				BC7DFED72B171AE000267B43 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				BC7DFEDA2B171AEC00267B43 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				BC7DFEDF2B171B3200267B43 /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = BC7DFEA22B17184300267B43 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -443,6 +474,76 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BC7DFED72B171AE000267B43 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.8.1;
+			};
+		};
+		BC7DFEDA2B171AEC00267B43 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.18.5;
+			};
+		};
+		BC7DFEDF2B171B3200267B43 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BC7DFED82B171AE000267B43 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BC7DFED72B171AE000267B43 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		BC7DFEDB2B171AEC00267B43 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BC7DFEDA2B171AEC00267B43 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		BC7DFEDD2B171AEC00267B43 /* SDWebImageMapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BC7DFEDA2B171AEC00267B43 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImageMapKit;
+		};
+		BC7DFEE02B171B3200267B43 /* RxBlocking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BC7DFEDF2B171B3200267B43 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxBlocking;
+		};
+		BC7DFEE22B171B3200267B43 /* RxBlocking-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BC7DFEDF2B171B3200267B43 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = "RxBlocking-Dynamic";
+		};
+		BC7DFEE42B171B3200267B43 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BC7DFEDF2B171B3200267B43 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		BC7DFEE62B171B3200267B43 /* RxCocoa-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BC7DFEDF2B171B3200267B43 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = "RxCocoa-Dynamic";
+		};
+		BC7DFEE82B171B3200267B43 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BC7DFEDF2B171B3200267B43 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BC7DFE992B17184300267B43 /* Project object */;
 }

@@ -28,7 +28,6 @@
                             <constraint firstItem="YEN-kk-dDX" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="gT3-g2-CUw"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YEN-kk-dDX" secondAttribute="trailing" constant="64" id="jd1-Ae-v2z"/>
                             <constraint firstItem="YEN-kk-dDX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="64" id="nEz-fX-6wV"/>
-                            <constraint firstItem="YEN-kk-dDX" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="zER-52-CGP"/>
                         </constraints>
                     </view>
                 </viewController>
